@@ -1,0 +1,9 @@
+## sudoers file.
+##
+Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+Defaults env_keep += "LD_PRELOAD"
+
+root ALL=(ALL) ALL
+ctf ALL=(ctf_cracked) NOPASSWD: /opt/chevalo
+
