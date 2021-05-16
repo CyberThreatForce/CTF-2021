@@ -4,19 +4,6 @@ require_once("classes/Login.php");
 
 session_start();
 
-$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-$sql = "SELECT `transaction` FROM cards WHERE cardNumber ='" . $_POST['to'] . "'";
-$result = $conn->query($sql);
-$row = $result->fetch_assoc();
-print_r($_POST);
-$ciphering = "AES-128-CTR";
-$iv_length = openssl_cipher_iv_length($ciphering);
-$options = 0;
-$encryption_iv = '1234567891011121';
-$encryption_key = "`D+B4E#aQuM;'}9{";
-$encryption = openssl_encrypt($_POST['from'] + $_POST['to'] + $_POST['amount'] . "EUR" . $row["transaction"], $ciphering,$encryption_key, $options, $encryption_iv);
-
-
 ?>
                    <!DOCTYPE html>
                    <html lang="en">
@@ -33,7 +20,8 @@ $encryption = openssl_encrypt($_POST['from'] + $_POST['to'] + $_POST['amount'] .
                         <link rel="stylesheet" type="text/css" href="css/iofrm-theme141.css">
                         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-                        
+                        <link rel="stylesheet" href="css/shop.css">
+
                    </head>
                    <div class="my-app">
                        <header class="my-header">
@@ -55,7 +43,7 @@ $encryption = openssl_encrypt($_POST['from'] + $_POST['to'] + $_POST['amount'] .
                                    <a class="nav-link" href="shop.php">Shop</a>
                                </li>
                                <li class="nav-item">
-                                   <a class="nav-link" href="https://discord.gg/XnSUhSBpVF">Flag</a>
+                                   <a class="nav-link" href="#">Flag</a>
                                </li>
                                <li class="nav-item">
                                    <a class="nav-link" href="index.php?logout">Logout</a>  
@@ -89,28 +77,27 @@ $encryption = openssl_encrypt($_POST['from'] + $_POST['to'] + $_POST['amount'] .
                            </div>
                          </section>
                          <body>
-<?php
-if($encryption == $_POST["validation"]){
-    echo "yes";
-    $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-    $sql = "UPDATE cards SET amount= amount +" . $_POST['amount'] . ", transaction= '" . ($row['transaction'] + 1 ) . "' WHERE cardNumber = '" . $_POST['to'] . "'";
-    $result = $conn->query($sql);
+<div class="shop-card">
+  <div class="title">
+    Mattcon 2 Trojan
+  </div>
+  <div class="desc">
+    The best trojon from APT403
+  </div>
+  <div class="slider">
+    <figure data-color="#E24938, #A30F22">
+      <img src="./images/trojan.png" />
+    </figure>
+  </div>
 
-    $sql = "UPDATE cards SET amount = amount -" . $_POST['amount'] . "  WHERE cardNumber = '" . $_POST['from'] . "'";
-    $result = $conn->query($sql);
-
-    #$sql = "UPDATE transactions SET amount = '" . $_POST['amount'] . "', cardFrom = '" . $_POST['from'] . "', cardTo = '" . $_POST['to'] . "'  WHERE cardNumber = '" . $_POST['from'] . "'";
-    $sql = "SELECT user_id FROM users WHERE user_name ='" . $_SESSION['user_name'] . "'";
-    $result = $conn->query($sql);
-    $row = $result->fetch_assoc();
-    $sql = "INSERT INTO transactions (cardFrom, cardTo, amount, user_id, date) VALUES ('" . $_POST['from'] . "', '" . $_POST['to'] . "', '" . $_POST['amount'] . "', '" . $row['user_id'] . "', NOW())";
-    $result = $conn->query($sql);
-
-}else{
-    echo "hack detected";
-}
+  <div class="cta">
+    <div class="price">100'000'000 EUR</div>
+    <button class="btn">Buy Now<span class="bg"></span></button>
+  </div>
+</div>
+<div class="bg"></div>
 
 
-$conn->close();
 
-?>
+<a class="the-most" target="_blank" href="https://codepen.io/2016/popular/pens/">
+</a>

@@ -51,7 +51,7 @@ session_start();
                                    <a class="nav-link" href="index.php">Home</a>
                                </li>
                                <li class="nav-item ">
-                                   <a class="nav-link" href="#">Shop</a>
+                                   <a class="nav-link" href="shop.php">Shop</a>
                                </li>
                                <li class="nav-item">
                                    <a class="nav-link" href="https://discord.gg/XnSUhSBpVF">Flag</a>
