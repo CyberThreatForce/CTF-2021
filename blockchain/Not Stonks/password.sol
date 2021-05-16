@@ -1,4 +1,4 @@
-pragma solidity ^0.4.22;
+pragma solidity ^0.8.4;
 contract AccountUnlock{
     string  password = 'JDUFHWUFHNYM34394';
     string private flag = "CYBERTF{S0lIdiTy_T0_Th3_M0oN_!}";
