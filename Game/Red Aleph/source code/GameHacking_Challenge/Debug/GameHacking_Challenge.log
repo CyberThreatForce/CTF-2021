@@ -1,0 +1,3 @@
+﻿  main.cpp
+E:\dev\GameHacking_Challenge\GameHacking_Challenge\main.cpp(142): warning C4715: 'ReadPtr' : les chemins de contrôle ne retournent pas tous une valeur
+  GameHacking_Challenge.vcxproj -> E:\dev\GameHacking_Challenge\Debug\GameHacking_Challenge.exe
