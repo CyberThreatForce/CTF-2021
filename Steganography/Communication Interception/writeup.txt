@@ -1,0 +1,29 @@
+Bonjour Agent-CTF,
+
+Nous avons interceptés une image qui semble tourner au sein de l'organisation: APT-403.
+Nous comptons sur vous pour dechiffrer ce message et prevenir une potentielle attaque.
+
+L'avenir de tous repose sur vos epaules.
+
+Q.G.
+
+
+1ere etape:
+
+changer magic header du jpg pour un .zip : 50 4B 03 04
+changer l'extension en .zip
+
+2eme etape:
+
+zip --> cracker le zip --> mdp : computer
+
+3eme etape:
+
+dechiffrer morse : from morse
+xor du fichier botnet avec le code trouvé dans le morse (Th3_@tt4cK_Is_C0m1Ng) 
+
+4eme etape:
+
+chercher dans le fichier dechiffré -->  mot de passe dans derniere ligne exiftool
+dans last_image : fxAJQnydZkR4v3V1MyDxKhRnVsfvdWTE3wg3pLGM en ajustant la luminosité --> from base58 --> xor avec mdp trouvé avant : @Pt-403 
+flag : CYBERTF{B0tn3t_R34dY_To_4ttak}
