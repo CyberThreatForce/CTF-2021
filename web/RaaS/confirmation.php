@@ -49,10 +49,7 @@ $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 $sql = "SELECT `amount` FROM cards WHERE cardNumber ='" . $_POST['from'] . "'";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
-echo $row["amount"];
-echo $sql;
-echo $_POST['amount'];
-if ($row["amount"] != true){
+if ($row != true){
   header("Location: /transaction.php?errorcode=carderror");
 } elseif ($_POST['amount'] > $row["amount"]){
     header("Location: /transaction.php?errorcode=notrich");//echo "Bad email!!!";
@@ -61,7 +58,7 @@ if ($row["amount"] != true){
 $sql = "SELECT `transaction` FROM cards WHERE cardNumber ='" . $_POST['to'] . "'";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
-if ($row["transaction"] != true) {
+if ($row != true) {
   header("Location: /transaction.php?errorcode=carderror");
 }else{
 
