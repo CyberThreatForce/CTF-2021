@@ -1,0 +1,5 @@
+Une fios la macro lancé, il faudra la lancé et attendre.
+
+La macro crée un .bat dans le %appdata%/temp avec un .bat qui a une commande powershell qui dl un .exe à distance
+
+le .exe contient le flag
