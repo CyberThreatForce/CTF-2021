@@ -83,7 +83,7 @@ $encryption = openssl_encrypt($_POST['from'] + $_POST['to'] + $_POST['amount'] .
                                  </div>
                                </div>
                                <div class="my-action-buttons my-app__header__buttons">
-                                <button class="my-action-button" onclick="location.href='index.php'">Cancel</button>
+                                <button class="my-action-button" onclick="location.href='index.php'">Home</button>
                               </div>
                              </div>
                            </div>
@@ -97,13 +97,20 @@ if($encryption == $_POST["validation"]){
     $result = $conn->query($sql);
 
     $sql = "UPDATE cards SET amount = amount -" . $_POST['amount'] . "  WHERE cardNumber = '" . $_POST['from'] . "'";
-    echo $sql;
     $result = $conn->query($sql);
+
+    #$sql = "UPDATE transactions SET amount = '" . $_POST['amount'] . "', cardFrom = '" . $_POST['from'] . "', cardTo = '" . $_POST['to'] . "'  WHERE cardNumber = '" . $_POST['from'] . "'";
+    $sql = "SELECT user_id FROM users WHERE user_name ='" . $_SESSION['user_name'] . "'";
+    $result = $conn->query($sql);
+    $row = $result->fetch_assoc();
+    $sql = "INSERT INTO transactions (cardFrom, cardTo, amount, user_id, date) VALUES ('" . $_POST['from'] . "', '" . $_POST['to'] . "', '" . $_POST['amount'] . "', '" . $row['user_id'] . "', NOW())";
+    $result = $conn->query($sql);
+
 }else{
     echo "hack detected";
 }
 
 
-
+$conn->close();
 
 ?>

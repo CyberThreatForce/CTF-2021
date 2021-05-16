@@ -126,48 +126,29 @@
                   <h3 class="my-card__header-title card-title">Completed</h3>
                 </div>
                 <ul class="my-list list-group list-group-flush">
-                  <li class="my-list-item list-group-item">
-                    <div class="my-list-item__date">
-                      <span class="my-list-item__date-day">28</span>
-                      <span class="my-list-item__date-month">jul</span>
-                    </div>
-                    <div class="my-list-item__text">
-                      <h4 class="my-list-item__text-title">Gumroad, Inc</h4>
-                      <p class="my-list-item__text-description">Withdraw to bank account</p>
-                    </div>
-                    <div class="my-list-item__fee">
-                      <span class="my-list-item__fee-delta">+250.00</span>
-                      <span class="my-list-item__fee-currency">USD</span>
-                    </div>
-                  </li>
-                  <li class="my-list-item list-group-item">
-                    <div class="my-list-item__date">
-                      <span class="my-list-item__date-day">28</span>
-                      <span class="my-list-item__date-month">jul</span>
-                    </div>
-                    <div class="my-list-item__text">
-                      <h4 class="my-list-item__text-title">Spotify Limited</h4>
-                      <p class="my-list-item__text-description">Preapproved Payment</p>
-                    </div>
-                    <div class="my-list-item__fee">
-                      <span class="my-list-item__fee-delta">+250.00</span>
-                      <span class="my-list-item__fee-currency">USD</span>
-                    </div>
-                  </li>
-                  <li class="my-list-item list-group-item">
-                    <div class="my-list-item__date">
-                      <span class="my-list-item__date-day">28</span>
-                      <span class="my-list-item__date-month">jul</span>
-                    </div>
-                    <div class="my-list-item__text">
-                      <h4 class="my-list-item__text-title">Bank of America</h4>
-                      <p class="my-list-item__text-description">Withdraw to bank account</p>
-                    </div>
-                    <div class="my-list-item__fee">
-                      <span class="my-list-item__fee-delta">+250.00</span>
-                      <span class="my-list-item__fee-currency">USD</span>
-                    </div>
-                  </li>
+                  <?php
+                   $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+                   $sql = "SELECT * FROM users A INNER JOIN transactions B ON A.user_id = B.user_id WHERE A.user_name ='" . $_SESSION['user_name'] . "' ORDER BY B.TransactionID DESC";
+                   $result = $conn->query($sql);
+
+                   
+                   if ($result!== false && $result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                        $date =(date_parse_from_format("Y.n.j",$row["date"]));
+                        $dateObj = DateTime::createFromFormat('!m', $date["month"]);
+                        $monthName = $dateObj->format('F');
+                        echo "<li class='my-list-item list-group-item'>";   
+                        echo "<div class='my-list-item__date'><span class='my-list-item__date-day'>" . $date["day"] . "</span>";
+                        echo "<span class='my-list-item__date-month'>". $monthName ."</span></div>";
+                        echo "<div class='my-list-item__text'><h4 class='my-list-item__text-title'>Transfert to " . $row["cardTo"] . "</h4>";
+                        echo "<p class='my-list-item__text-description'>From " . $row["cardFrom"] ."</p><div>";
+                        echo "<div class='my-list-item__fee'><span class='my-list-item__fee-delta'>+" . $row["amount"] ."</span>";
+                        echo "<span class='my-list-item__fee-currency'>EUR</span></div>"; 
+                        echo "</li>";
+                    }
+                      }
+                    $conn->close();
+                    ?>
                 </ul>
               </div>
               <!-- End Completed card -->
