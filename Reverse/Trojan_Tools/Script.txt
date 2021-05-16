@@ -1,0 +1,45 @@
+Param($choix)
+
+if($choix -eq 5383)
+{
+    Write-Host "Welcome to HackTool `r`n`r`n`r`n===MENU===`r`n1)FUD PAYLOAD`r`n2)DDOS`r`n3)Personnal note"
+
+    $userChoice = Read-Host "Enter your choice : "
+
+    if($userChoice -eq 1)
+    {
+        $trojanPath = Read-Host "Enter path of payload : "
+        Write-Host "Obfuscating in progress..."
+        Write-Host "The payload $trojanPath is now obufscated !"
+        Write-Error "CRITICAL ERROR, IMPOSSIBLE TO OBFUSCATING PAYLOAD"
+    }
+
+    ElseIf ($userChoice -eq 2)
+    {
+        $ipToAttack = Read-Host "Enter IP to Ddos : "
+        $portToAttack = Read-Host "Enter port of target : "
+        Write-Host "ATTACK STARTED to $ipToAttack : $portToAttack"
+        Write-Host "500 requests sended..."
+        Write-Error "CRITICAL ERROR, IMPOSSIBLE TO SEND PACKET"
+    }
+
+    ElseIF ($userChoice -eq 3)
+    {
+		Write-Error "ERROR, OPTION 3 IS NOT INCORPORED PLEASE TRY 1 BETWEEN 10"
+    }
+
+    ElseIF ($userChoice -eq 8)
+    {
+        Write-Host "CYBERTF{Y0u_H4s_P3wn_Th3_H4ck_T0ol}"
+    }
+
+    Else
+    {
+        Write-Error "ERROR, OPTION $userChoice IS NOT INCORPORED PLEASE TRY 1 BETWEEN 10"
+    }
+}
+
+else
+{
+    Write-Host "Please enter the good PIN"
+}
