@@ -1,2 +1,2 @@
-## Lien pour dowwnload l'iso
+## Lien pour download l'iso
 [sergei.iso](https://gofile.io/d/ogZvyF)
