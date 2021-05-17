@@ -1,1 +1,1 @@
-Tout viens a qui c'est attendre
+Tout vient à qui sait attendre
