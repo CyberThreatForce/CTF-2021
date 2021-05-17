@@ -3,7 +3,7 @@ import random
 
 serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM);
 
-serverSocket.bind(('', 9050));
+serverSocket.bind(('0.0.0.0', 8080));
 serverSocket.listen();
 
 while (True):
