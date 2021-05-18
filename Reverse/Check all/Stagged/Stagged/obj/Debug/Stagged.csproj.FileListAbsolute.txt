@@ -1,0 +1,7 @@
+C:\Users\Théo\source\repos\Stagged\Stagged\bin\Debug\Stagged.exe.config
+C:\Users\Théo\source\repos\Stagged\Stagged\bin\Debug\Stagged.exe
+C:\Users\Théo\source\repos\Stagged\Stagged\bin\Debug\Stagged.pdb
+C:\Users\Théo\source\repos\Stagged\Stagged\obj\Debug\Stagged.csprojAssemblyReference.cache
+C:\Users\Théo\source\repos\Stagged\Stagged\obj\Debug\Stagged.csproj.CoreCompileInputs.cache
+C:\Users\Théo\source\repos\Stagged\Stagged\obj\Debug\Stagged.exe
+C:\Users\Théo\source\repos\Stagged\Stagged\obj\Debug\Stagged.pdb
