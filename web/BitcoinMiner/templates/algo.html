@@ -1,35 +1,59 @@
 <html>
     <head>
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='bootstrap.min.css') }}">
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='font-awesome.min.css') }}">
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
-    <title>Биткойн-майнер APT-403</title>
-    </head> 
-<br/>
-<br/>
-<div class="container">
-<div class="col-sm-12 my-auto align-self-center">
-    <h1 class="text-center" style="color: rgb(0, 0, 0);">Наш алгоритм шифрования</h1>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='bootstrap.min.css') }}">
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='font-awesome.min.css') }}">
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+      <title>Биткойн-майнер APT-403</title>
+    </head>
     <br/>
     <br/>
-<p style="color: rgb(0, 0, 0);">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<br/>
-<br/>
-<body style='align-items: center;'>
-    <div class="text-center">
-        <img src="../static/images/algo.jpg" class="rounded mx-auto d-block">
-    </div>
-</body>
-<footer>
-    <br/>
-<br/>
-<br/>
-<br/>
-<div class="fixed-bottom">
-<p class="text-center" style="color: rgb(0, 0, 0);">APT-403</p>
-</div>
-</footer>
-</div>
-</div>
-</html>
+    <div class="container">
+      <h1 class="text-center" style="color: rgb(0, 0, 0);">Наш алгоритм шифрования</h1>
+      <br/>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 left" style="align-items:center;text-align:center;">
+          <img src="../static/images/algo.jpg" class="rounded mx-auto d-block">
+        </div>
+        <div class="col-lg-6 col-sm-12 right">
+          <pre><code>
+<span style="color:red;">def</span> <span style="color:green;">xor</span>(cleartext,ciphertext):
+    <span style="color:purple;">alphabet</span> = <span style="color:#191970;">"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@#?!&%$-_1234567890"</span>
+    <span style="color:purple;">listes</span> = []
+    <span style="color:red;">for</span> <span style="color:purple;">i</span> <span style="color:red;">in</span> cleartext:
+        liste.<span style="color:#006400;">append</span>(alphabet.<span style="color:#006400;">index</span>(<span style="color:#CD5C5C;">i)</span>)
+    <span style="color:purple;">liste_bin</span>=[]
+    <span style="color:red;">for</span> i <span style="color:red;">in</span> liste:
+        liste_bin.<span style="color:#006400;">append</span>(bin(i).split(<span style="color:#191970;">"b"</span>)[<span style="color:#CD5C5C;">1</span>])
+    <span style="color:purple;">cipherbin</span> = <span style="color:#006400;">bin</span>(<span style="color:#800000;">int</span>(ciphertext)).<span style="color:#006400;">split</span>(<span style="color:#191970;">"b"</span>)[<span style="color:#CD5C5C;">1</span>]*<span style="color:#CD5C5C;">15</span>
+    <span style="color:purple;">liste_res</span> = []
+    <span style="color:red;">for</span> part <span style="color:red;">in</span> liste_bin:
+        <span style="color:purple;">res</span> = <span style="color:#191970;">""</span>
+        <span style="color:red;">for</span> index <span style="color:red;">in</span> <span style="color:#006400;">range</span>(<span style="color:#006400;">len</span>(part)):
+            <span style="color:purple;">res</span> += str(<span style="color:#800000;">int</span>(part[<span style="color:#CD5C5C;">index</span>])^<span style="color:#800000;">int</span>(cipherbin[<span style="color:#CD5C5C;">index</span>]))
+        liste_res.<span style="color:#006400;">append</span>(res)
+    <span style="color:purple;">liste_dec</span> = []
+    <span style="color:red;">for</span> i <span style="color:red;">in</span> liste_res:
+        liste_dec.<span style="color:#006400;">append</span>(<span style="color:#800000;">int</span>(i,<span style="color:#CD5C5C;">2</span>))
+    <span style="color:purple;">enc_text</span> = <span style="color:#191970;">""</span>
+    <span style="color:red;">for</span> i <span style="color:red;">in</span> liste_dec:
+        <span style="color:purple;">enc_text</span> += alphabet[<span style="color:#CD5C5C;">i%44</span>]
+    <span style="color:red;">return</span> enc_text
 
+
+
+
+
+          </code></pre>
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <footer>
+        <div class="fixed-bottom">
+          <p class="text-center" style="color: rgb(0, 0, 0);">APT-403</p>
+        </div>
+      </footer>
+    </div>
+</html>

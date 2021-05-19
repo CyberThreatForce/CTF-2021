@@ -1,6 +1,9 @@
 from flask import Flask, request, render_template, make_response
 import random
 
+global key_holder
+key_holder = []
+
 def xor(cleartext,ciphertext):
     alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@#?!&%$-_1234567890"
     liste = []
@@ -34,7 +37,7 @@ class Key:
         second_part = random.choice(range(100000,999999))
         self.key = str(first_part)+"@"+str(second_part)
         return self.key
-        
+
     def generate_password(self,key):
         digit = str(random.choice(range(100,99999)))
         digit2 = str(random.choice(range(100,99999)))
@@ -51,7 +54,7 @@ class Key:
         password = password[::-1]
 
         return password
-    
+
     def check_password(self,password,key):
         key1,key2 = key.split("@")[0],key.split("@")[1]
         password = xor(password,key1)
@@ -77,10 +80,12 @@ app = Flask(__name__)
 
 @app.route('/',methods=['GET',"POST"])
 def index():
+    global key_holder
     if request.method == 'GET':
         key = password.generate()
         site_password = password.generate_password(key)
         print(site_password)
+        key_holder.append(site_password)
         res = make_response(render_template("index.html"))
         res.set_cookie("key",key,max_age=60*60*24*365*2)
         res.set_cookie("password",site_password,max_age=60*60*24*365*2)
@@ -95,10 +100,13 @@ def index():
         print(site_password)
 
         if password.check_password(entry_password,cookie)==site_password:
-            return render_template('index.html',success="{FLAG}")
+            if entry_password in key_holder:
+                return render_template('index.html',success="{FLAG}")
+            else:
+                return render_template('index.html',error="Password not in the db")
         else:
             return render_template('index.html',error="Invalid Password")
-        
+
 
 @app.route('/algo',methods=['GET'])
 def algo():
