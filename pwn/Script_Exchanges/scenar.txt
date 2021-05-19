@@ -1,0 +1,8 @@
+Bonjour Agent-CTF,
+
+Nous avons constatés que l'APT-403 envoyait tout les jours un message chiffré par udp.
+Vous devrez l'intercepter et le dechiffrer dans les plus cours delais.
+
+Nous comptons sur vous.
+
+Q.G.

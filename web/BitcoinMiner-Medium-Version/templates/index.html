@@ -1,0 +1,57 @@
+<html>
+    <head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='bootstrap.min.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='font-awesome.min.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <title>Биткойн-майнер APT-403</title>
+    </head>
+
+{% if error %}
+    <div class="alert alert-danger" role="alert" var_name="return_code + secret (_)">
+        {{error}}
+    </div>
+    {% endif %}
+    {% if success %}
+    <div class="alert alert-success" role="alert" var_name="return_code + secret (_)">
+        {{success}}
+    </div>
+    {% endif %}
+<br/>
+<br/>
+<div class="container">
+<div class="col-sm-12 my-auto align-self-center">
+    <h1 class="text-center" style="color: rgb(0, 0, 0);">Биткойн Майнер</h1>
+    <br/>
+    <br/>
+<p style="color: rgb(0, 0, 0);">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<br/>
+<br/>
+<body>
+
+
+<div class="form-outline">
+    <form method="POST">
+        <label class="form-label" for="typeText" style="color: rgb(0, 0, 0);">Введите действительный биткойн-адрес</label>
+        <input type="text" id="typeText" class="form-control" name="wallet_key"/>
+        <label class="form-label" for="typeText" style="color: rgb(0, 0, 0);">пароль</label>
+        <input type="text" id="typeText" class="form-control" name="password"/>
+        <input type="submit" class="btn btn-secondary">
+    </form>
+  </div>
+    
+</form>
+</body>
+<footer>
+    <br/>
+<br/>
+<br/>
+<br/>
+<div class="fixed-bottom">
+<p class="text-center" style="color: rgb(0, 0, 0);">APT-403</p>
+</div>
+</footer>
+</div>
+</div>
+</html>
+
+
