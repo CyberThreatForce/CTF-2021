@@ -1,13 +1,13 @@
 # cyberthreatforce
 
-TOT. Chall on GITHUB : 23/40
+TOT. Chall on GITHUB : 24/40
 
 ----CHALL COMPTEUR----
 
 * KFM 	7
 * Dallas 	5
 * Clément 5
-* Ph3Nx   3
+* Ph3Nx   4
 * Noodle 	2
 * APT 	1
 
