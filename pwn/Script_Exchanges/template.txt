@@ -1,0 +1,16 @@
+var users = [{
+  username: 'admin',
+  password: '%%replace%%'
+}];
+
+var index = users.indexof(function (user) {
+  return users.username === user.username &&
+  CryptoJS.MD5(users.password) === user.password;
+})
+
+if (index !== -1) {
+  window.open('admin.html')
+}
+else {
+  alert("Error Password or Username"
+)
