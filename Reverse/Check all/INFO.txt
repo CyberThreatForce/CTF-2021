@@ -1,0 +1,6 @@
+---------------------------
+STAGGED :
+
+Download le .exe distant qui est sous format .gif puis le renomme puis le lance
+
+---------------------------
