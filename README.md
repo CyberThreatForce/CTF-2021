@@ -1,8 +1,8 @@
 # cyberthreatforce
 
-TOT. Chall on GITHUB : 25/40
+TOT. Chall on GITHUB : 32/40
 
-----CHALL COMPTEUR----
+----CHALL COMPTEUR---- (non à jour)
 
 * KFM 	7
 * Dallas 	6
