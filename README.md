@@ -2,15 +2,15 @@
 
 TOT. Chall on GITHUB : 32/40
 
-----CHALL COMPTEUR---- (À jour)
+----CHALL COMPTEUR---- (non à jour)
 
-* KFM 	9
+* KFM 	7
 * Dallas 	6
-* Clément 6
-* Ph3nX   5
-* Noodle 	3
+* Clément 5
+* Ph3Nx   5
+* Noodle 	2
 * APT 	1
-* Kaeko	2
 
+* Kaeko	0
 * Ezneh	0
 * Tristan	0
