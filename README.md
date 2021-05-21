@@ -2,7 +2,7 @@
 
 TOT. Chall on GITHUB : 32/40
 
-----CHALL COMPTEUR---- (non à jour)
+----CHALL COMPTEUR---- (À jour)
 
 * KFM 	9
 * Dallas 	6
