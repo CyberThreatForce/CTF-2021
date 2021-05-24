@@ -1,0 +1,11 @@
+fichier wav : trouver a quel moment changement de rythme du son
+
+couper en 3 morceaux aux changements
+
+convertir les morceaux en binaire
+
+xor selon l'algorithme : chaine milieu avec celle de la fin
+puis seconde xor : avec le resultat du xor d'avant, xorer avec premier binaire
+
+
+from bin to text du resultat des 2 xors --> flag : CYBERTF{R0ll1nG_C0d3!}
