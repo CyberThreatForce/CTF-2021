@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 from hashlib import sha256
 from os import system, execvp
 import sys
@@ -17,8 +17,10 @@ def sanitize(val):
 
 mesg = """
 give me cmd|token
-example: {}
-""".format(f"ls|{sha256(SECRET.encode() + b'ls').hexdigest()}")
+example: 
+{}
+{}
+""".format(f"ls|{sha256(SECRET.encode() + b'ls').hexdigest()}", f"id|{sha256(SECRET.encode() + b'id').hexdigest()}")
 try:
     print(mesg, flush=True)
     userInput = sys.stdin.buffer.readline()[:-1]
