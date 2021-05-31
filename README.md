@@ -1,6 +1,22 @@
 # cyberthreatforce
 
-TOT. Chall on GITHUB : 34/40
+
+* Brainfuck : 1
+* Forensic : 4
+* Game : 1
+* IA : 1
+* Network : 2
+* Reverse : 7
+* Stegano : 1 
+* Blockchain : 2
+* Crypto : 2
+* Misc : 2
+* Osint : 1
+* PWN : 5
+* Web : 5
+
+TOT. Chall : 34 /40 
+
 
 ----CHALL COMPTEUR---- (non à jour)
 
