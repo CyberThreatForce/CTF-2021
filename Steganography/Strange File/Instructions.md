@@ -5,6 +5,8 @@ Cette image semble cacher quelque chose a nos yeux, meme si elle parait corompue
 
 Votre mission sera de trouver le message caché derriere cette image.
 
+Nous comptons sur vous.
+
 Q.G.
 
 
