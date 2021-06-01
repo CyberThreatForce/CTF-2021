@@ -5,7 +5,7 @@
 * Forensic : 4
 * Game : 1
 * IA : 1
-* Network : 2
+* Network : 3
 * Reverse : 7
 * Stegano : 2 
 * Blockchain : 2
@@ -15,7 +15,7 @@
 * PWN : 5
 * Web : 5
 
-TOT. Chall : 35 /40 
+TOT. Chall : 36 /40 
 
 
 ----CHALL COMPTEUR---- (non à jour)
@@ -23,7 +23,7 @@ TOT. Chall : 35 /40
 * KFM 	7
 * Dallas 	6
 * Clément 5
-* Ph3Nx   7
+* Ph3Nx   8
 * Noodle 	3
 * APT 	1
 
