@@ -7,7 +7,7 @@
 * IA : 1
 * Network : 2
 * Reverse : 7
-* Stegano : 1 
+* Stegano : 2 
 * Blockchain : 2
 * Crypto : 2
 * Misc : 2
@@ -15,7 +15,7 @@
 * PWN : 5
 * Web : 5
 
-TOT. Chall : 34 /40 
+TOT. Chall : 35 /40 
 
 
 ----CHALL COMPTEUR---- (non à jour)
@@ -23,7 +23,7 @@ TOT. Chall : 34 /40
 * KFM 	7
 * Dallas 	6
 * Clément 5
-* Ph3Nx   6
+* Ph3Nx   7
 * Noodle 	3
 * APT 	1
 
