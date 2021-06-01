@@ -15,6 +15,10 @@ Writeup:
 
 
 nom du fichier --> from b64 --> password
+
+
 Xor fichier avec password (Pp@sSW0rD1345245@!!) --> Qr code inversé
+
+
 Inverser couleurs qrcode --> scanner --> flag : CYBERTF{H1dD3n_M3Ss4g3_Fr0m_G4r1z0V}
 
