@@ -23,9 +23,13 @@ garizov
 $ls -lah
 
 drwxr-xr-x 1 garizov garizov  512 May 16 16:39 garizov.inf
+
 drwxr-xr-x 1 garizov garizov  1   May 16 16:39 confidential.txt
+
 drwxr-xr-x 1 garizov garizov  1   May 16 16:39 attack_planning.txt
+
 drwxr-xr-x 1 garizov garizov  1   May 16 16:39 attack_plan.txt
+
 drwxr-xr-x 1 garizov garizov  512 Jun 13  2020 .comm_cert
 
 $cat .comm_cert 
