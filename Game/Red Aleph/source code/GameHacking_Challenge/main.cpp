@@ -178,6 +178,8 @@ INT WINAPI WinMain(__in HINSTANCE hInstance, __in_opt HINSTANCE hPrevInstance, _
 	while (true)
 	{
 		hProcess = getProcHdlByName("Red Aleph.exe");
+		if (hProcess == NULL)
+			break;
 		pID = getProcIdByName("Red Aleph.exe");
 		PointerBaseAddress = GetThreadstackStartAddress(0, pID, hProcess);
 		DWORD ptrval = ReadPtr(hProcess, (void*)(PointerBaseAddress + offsetGameToBaseAdress), pointsOffsets);
@@ -186,6 +188,7 @@ INT WINAPI WinMain(__in HINSTANCE hInstance, __in_opt HINSTANCE hPrevInstance, _
 		sprintf_s(buff, 8, "%d", ptrval);
 		if (buff && check_score(buff) == true) {
 			MessageBoxA(nullptr, OBFUSCATE("CYBERTF{Y0u_H4ck3d_Th3_G4m3}"), OBFUSCATE("Info"), MB_OK | MB_ICONINFORMATION);
+			break;
 		}
 		Sleep(2000);
 	}
