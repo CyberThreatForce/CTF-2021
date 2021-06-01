@@ -1,7 +1,7 @@
 Bonjour Agent-CTF,
 
 Nous avons recupérés une image sur un des chats en lignes qu'utilise l'APT-403.
-Cette image semble cacher quelque chose a nos yeux, meme si elle parait corompue.
+Cette image semble cacher quelque chose a nos yeux, meme si elle parait corompue a premiere vue.
 
 Votre mission sera de trouver le message caché derriere cette image.
 
