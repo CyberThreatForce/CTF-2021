@@ -23,7 +23,7 @@ TOT. Chall : 37 /40
 * KFM 	7
 * Dallas 	6
 * Clément 5
-* Ph3Nx   9
+* Ph3nX   9
 * Noodle 	3
 * APT 	1
 
