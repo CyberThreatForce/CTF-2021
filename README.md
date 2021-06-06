@@ -15,7 +15,7 @@
 * PWN : 5
 * Web : 5
 
-TOT. Chall : 36 /40 
+TOT. Chall : 37 /40 
 
 
 ----CHALL COMPTEUR---- (non à jour)
