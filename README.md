@@ -9,7 +9,7 @@
 * Reverse : 7
 * Stegano : 2 
 * Blockchain : 2
-* Crypto : 2
+* Crypto : 3
 * Misc : 2
 * Osint : 1
 * PWN : 5
@@ -23,7 +23,7 @@ TOT. Chall : 36 /40
 * KFM 	7
 * Dallas 	6
 * Clément 5
-* Ph3Nx   8
+* Ph3Nx   9
 * Noodle 	3
 * APT 	1
 
