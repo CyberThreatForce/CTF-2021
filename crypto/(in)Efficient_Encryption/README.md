@@ -2,4 +2,4 @@
 
 [Writeup](./Resolution/writeup.md)
 
-[Challenge](./challenge)
+[Challenge](./challenge/synopsis.md)
