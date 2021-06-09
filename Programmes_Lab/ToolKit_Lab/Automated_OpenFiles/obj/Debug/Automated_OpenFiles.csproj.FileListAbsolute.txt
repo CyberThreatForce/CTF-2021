@@ -1,0 +1,7 @@
+E:\dev\ToolKit_Lab\Automated_OpenFiles\bin\Debug\Automated_OpenFiles.exe.config
+E:\dev\ToolKit_Lab\Automated_OpenFiles\bin\Debug\Automated_OpenFiles.exe
+E:\dev\ToolKit_Lab\Automated_OpenFiles\bin\Debug\Automated_OpenFiles.pdb
+E:\dev\ToolKit_Lab\Automated_OpenFiles\obj\Debug\Automated_OpenFiles.csprojAssemblyReference.cache
+E:\dev\ToolKit_Lab\Automated_OpenFiles\obj\Debug\Automated_OpenFiles.csproj.CoreCompileInputs.cache
+E:\dev\ToolKit_Lab\Automated_OpenFiles\obj\Debug\Automated_OpenFiles.exe
+E:\dev\ToolKit_Lab\Automated_OpenFiles\obj\Debug\Automated_OpenFiles.pdb
