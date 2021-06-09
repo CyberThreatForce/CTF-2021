@@ -8,7 +8,7 @@ namespace Automated_OpenFiles
     {
         static void Main()
         {
-            int sleeptime = 3000;
+            int sleeptime = 1000 * 3;
             string dir = "dir_enum";
             string[] files = Directory.GetFileSystemEntries(dir, "*", SearchOption.AllDirectories);
 
