@@ -1,0 +1,7 @@
+C:\Users\Théo\source\repos\ConnectionPannel\ConnectionPannel\bin\Debug\ConnectionPannel.exe.config
+C:\Users\Théo\source\repos\ConnectionPannel\ConnectionPannel\bin\Debug\ConnectionPannel.exe
+C:\Users\Théo\source\repos\ConnectionPannel\ConnectionPannel\bin\Debug\ConnectionPannel.pdb
+C:\Users\Théo\source\repos\ConnectionPannel\ConnectionPannel\obj\Debug\ConnectionPannel.csprojAssemblyReference.cache
+C:\Users\Théo\source\repos\ConnectionPannel\ConnectionPannel\obj\Debug\ConnectionPannel.csproj.CoreCompileInputs.cache
+C:\Users\Théo\source\repos\ConnectionPannel\ConnectionPannel\obj\Debug\ConnectionPannel.exe
+C:\Users\Théo\source\repos\ConnectionPannel\ConnectionPannel\obj\Debug\ConnectionPannel.pdb
