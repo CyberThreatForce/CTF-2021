@@ -14,6 +14,7 @@
 * Osint : 1
 * PWN : 5
 * Web : 5
+* Discord : 1
 
 TOT. Chall : 37 /40 
 
