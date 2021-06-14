@@ -8,7 +8,7 @@ namespace Automated_OpenFiles
     {
         static void Main()
         {
-            int sleeptime = 1000 * 3;
+            int sleeptime = 1000 * 120;
             string dir = @"C:\Users\p.loffe\Nextcloud\IT-Support";
             string[] files = Directory.GetFileSystemEntries(dir, "*", SearchOption.AllDirectories);
 
