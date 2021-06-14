@@ -9,7 +9,7 @@ namespace Automated_OpenFiles
         static void Main()
         {
             int sleeptime = 1000 * 3;
-            string dir = "dir_enum";
+            string dir = @"C:\Users\p.loffe\Nextcloud\IT-Support";
             string[] files = Directory.GetFileSystemEntries(dir, "*", SearchOption.AllDirectories);
 
             while (true)
