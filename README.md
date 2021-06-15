@@ -14,6 +14,7 @@
 * Osint : 1
 * PWN : 5
 * Web : 5
+* Discord : 1
 
 TOT. Chall : 37 /40 
 
@@ -23,7 +24,7 @@ TOT. Chall : 37 /40
 * KFM 	7
 * Dallas 	6
 * Clément 5
-* Ph3nX   9
+* Ph3nX   10
 * Noodle 	3
 * APT 	1
 
