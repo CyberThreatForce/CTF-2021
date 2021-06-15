@@ -8,7 +8,7 @@ namespace Kill_SuspectProcess
     {
         static void Main()
         {
-            string[] suspect_procnames = { "beacon", "meterpreter", "payload", "notepad" };
+            string[] suspect_procnames = { "beacon", "meterpreter", "payload" };
 
             while (true)
             {
