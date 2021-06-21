@@ -25,7 +25,7 @@ TOT. Chall : 37 /40
 * Dallas 	6
 * Clément 5
 * Ph3nX   10
-* Noodle 	3
+* Noodle 	5
 * APT 	1
 
 * Kaeko	0
