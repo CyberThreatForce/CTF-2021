@@ -2,7 +2,7 @@
 
 
 * Brainfuck : 1
-* Forensic : 4
+* Forensic : 6
 * Game : 1
 * IA : 1
 * Network : 3
@@ -16,7 +16,7 @@
 * Web : 5
 * Discord : 1
 
-TOT. Chall : 37 /40 
+TOT. Chall : 39 /40 
 
 
 ----CHALL COMPTEUR---- (non à jour)
@@ -25,7 +25,7 @@ TOT. Chall : 37 /40
 * Dallas 	6
 * Clément 5
 * Ph3nX   10
-* Noodle 	3
+* Noodle 	5
 * APT 	1
 
 * Kaeko	0
