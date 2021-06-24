@@ -1,33 +1,9 @@
-# cyberthreatforce
+un problème trés connue nous avons une oracle de chiffrement 
+qui chiffre mesg||flag en aes ecb.
+le player doit trouver par luis meme qu'un attaque par CPA(choosen plain text attack)
+est possible
 
-
-* Brainfuck : 1
-* Forensic : 6
-* Game : 1
-* IA : 1
-* Network : 3
-* Reverse : 7
-* Stegano : 2 
-* Blockchain : 2
-* Crypto : 3
-* Misc : 2
-* Osint : 1
-* PWN : 5
-* Web : 5
-* Discord : 1
-
-TOT. Chall : 39 /40 
-
-
-----CHALL COMPTEUR---- (non à jour)
-
-* KFM 	7
-* Dallas 	6
-* Clément 5
-* Ph3nX   10
-* Noodle 	5
-* APT 	1
-
-* Kaeko	0
-* Ezneh	0
-* Tristan	0
+###########################################
+Nous avons trouvé un service kermenof étrange nous pensons qu'il s'agit d'une oracle
+de chiffrement en aes. les donnée envoyé semble concatené avec une donnée importante
+a vous de la retrouver.
