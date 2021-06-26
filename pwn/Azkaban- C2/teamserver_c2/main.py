@@ -58,11 +58,11 @@ while (True):
             clientConnected.send("____________________________________________________________\n".encode());
             clientConnected.send("| Pass           | Username | Site                          |\n".encode());
             clientConnected.send("____________________________________________________________\n".encode());
-            clientConnected.send("| .W$vjDEmV7YR/  | s3rgue1   | dontexist.onion              |\n ".encode());
+            clientConnected.send("| .W$vjDEmV7YR/  | s3rgue1   | 3eRAqbN921ULIRn8.onion       |\n ".encode());
             clientConnected.send("____________________________________________________________\n".encode());
-            clientConnected.send("| 4709F798A8CFBDC870420453276E0B8E  | Administrator   | .  |\n ".encode());
+            clientConnected.send("| CYBERTF{0wn_th3_t3ams3rv3r} | Administrator   | .         |\n ".encode());
             clientConnected.send("___________________________________________________________\n".encode());
-            clientConnected.send("| kuBtV9T}a]YP} | serguei@secret.com | dontexist.onion       |\n ".encode());
+            clientConnected.send("| kuBtV9T}a  | serguei@secret.com | orCcZ6gk4dgPHZOx.onion |\n ".encode());
             clientConnected.send("___________________________________________________________\n".encode());
 
 
