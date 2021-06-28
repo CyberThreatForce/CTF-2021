@@ -8,4 +8,6 @@ Nous avons egalement recupéré l'algorithme de chiffrement de la clef, grace a 
 
 Votre mission sera de dechiffrer cette transmission a l'aide de l'algorithme.
 
+Fichier : https://mega.nz/file/JoIgWT6T#Q_E4UPtXD5nlPvcXqmQsJPAcEn6SkURF3nN-DB6MGRQ
+
 Q.G
