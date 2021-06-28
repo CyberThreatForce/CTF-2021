@@ -5,7 +5,7 @@ RUN apt update
 RUN apt -yq upgrade
 
 RUN mkdir /home/bitcoinminer
-COPY ./BitcoinMiner-Medium-Version/ /home/bitcoinminer
+COPY ./ /home/bitcoinminer
 
 RUN apt-get -yq install python3
 RUN apt-get -yq install python3-pip
