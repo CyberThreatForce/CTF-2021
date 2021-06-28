@@ -14,7 +14,7 @@ from discord.ext.commands import MemberConverter
 
 
 #load_dotenv()
-bot = commands.Bot(command_prefix=commands.when_mentioned_or("?"),description="Le bot du GeniusBar !",intents=discord.Intents.all(),activity=discord.Game(name="aider le GeniusBar à faire son boulot !"))
+bot = commands.Bot(command_prefix=commands.when_mentioned_or("?"),description="",intents=discord.Intents.all(),activity=discord.Game(name=""))
 
 class MyHelp(commands.HelpCommand):
     def get_command_signature(self, command):
