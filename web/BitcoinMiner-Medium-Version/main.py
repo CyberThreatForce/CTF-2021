@@ -83,7 +83,7 @@ global password
 password = Key()
 
 app = Flask(__name__)
-
+app.debug = False
 
 @app.route('/',methods=['GET',"POST"])
 def index():
