@@ -5,7 +5,7 @@ RUN apt update
 RUN apt -yq upgrade
 
 RUN mkdir /home/botnetflooder
-COPY ./botnetflooder/ /home/botnetflooder
+COPY ./ /home/botnetflooder
 
 RUN apt-get -yq install python3
 RUN apt-get -yq install python3-pip
