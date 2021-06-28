@@ -109,7 +109,7 @@ def index():
 
         if password.check_password(entry_password,cookie)==site_password:
             if entry_password in key_holder:
-                return render_template('index.html',success="CYBERTF{3fFici3nT_M1n3r1$#}")
+                return render_template('index.html',success="CYBERTF{Th3_Min3r_Is_Ins3cURe}")
             else:
                 return render_template('index.html',error="Password not in the db")
         else:
