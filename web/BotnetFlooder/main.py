@@ -7,7 +7,7 @@ global secret
 
 secret = "_"
 app = Flask(__name__)
-
+app.debug = False
 
 def ddos(ip):
     global retour
