@@ -19,6 +19,6 @@ In fact these one has been emitted from a car key.
 We believe that the APT-403 is using the key as a message sender, and the car as a receiver.
 We intercepted a binary code, and an encryption algorithm.
 
-Your mission, would be to decrypt the transmission, and find the hidden message behind it.
+Your mission, will be to decrypt the transmission, and find the hidden message behind it.
 
 Q.G
