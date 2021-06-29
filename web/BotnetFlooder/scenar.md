@@ -7,6 +7,14 @@ Nous comptons sur vous.
 
 Q.G.
 
+Hello CTF-Agent,
+
+We found a website, used by the APT-403, that, thanks to a botnet, executes ddos attacks on some targets.
+
+Your mission will be to find a way in the web server.
+
+H.Q
+
 Solution:
 
 1) Rentrer ip au pif
