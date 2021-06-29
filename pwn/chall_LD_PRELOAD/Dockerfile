@@ -7,7 +7,6 @@ RUN echo "ctf:cyberthreatforce" | chpasswd
 COPY ./flag.txt /home/ctf_cracked
 RUN chown ctf_cracked:ctf_cracked /home/ctf_cracked/flag.txt
 RUN chmod 400 /home/ctf_cracked/flag.txt
-RUN chown root:root /home/ctf_cracked/flag.txt
 COPY ./sudoers /etc/sudoers
 RUN chmod 555 /opt
 COPY ./Ivazov /opt/Ivazov
