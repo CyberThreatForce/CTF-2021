@@ -1,15 +1,20 @@
 Bonjour Agent-CTF,
 
 Nous avons recupérés une image sur un des chats en lignes qu'utilise l'APT-403.
-Cette image semble cacher quelque chose a nos yeux, meme si elle parait corompue a premiere vue.
+Cette image semble cacher quelque chose a nos yeux, meme si elle parait corompue.
 
 Votre mission sera de trouver le message caché derriere cette image.
 
-Nous comptons sur vous.
-
 Q.G.
 
+Hello CTF-Agent,
 
+We successed in getting an image from an online chat, that the APT-403 use.
+This image seems to be hiding something, even if it seems corrupted.
+
+Your mission will be to find the hidden message behind this image.
+
+Q.G.
 
 Writeup:
 
