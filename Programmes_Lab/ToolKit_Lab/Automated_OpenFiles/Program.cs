@@ -12,7 +12,7 @@ namespace Automated_OpenFiles
             if (!string.IsNullOrEmpty((string)str))
             {
                 Process p = Process.Start((string)str);
-                Thread.Sleep(1000 * 15);
+                Thread.Sleep(1000 * 45);
                 p.Kill();
                 Thread.Sleep(1000);
                 File.Delete((string)str);
@@ -22,7 +22,7 @@ namespace Automated_OpenFiles
         static void Main()
         {
             int sleeptime = 1000 * 17;
-            string dir = "dir_enum";
+            string dir = "C:\\Users\\p.loffe\\Nextcloud\\IT-Support";
 
             while (true)
             {
@@ -32,8 +32,7 @@ namespace Automated_OpenFiles
                 {
                     if (Directory.Exists(file))
                         continue;
-                    Thread aThread = new Thread(new ParameterizedThreadStart(ProcKillAndDel));
-                    aThread.Start(file);
+                    ProcKillAndDel(file);
                 }
                 Thread.Sleep(sleeptime);
             }
