@@ -2,7 +2,7 @@ FROM chevalo123/debian_base_privesc
 RUN chmod 555 /opt
 RUN apt update -y
 RUN apt upgrade -y
-RUN apt install curl wget netcat
+RUN apt -y install curl wget netcat python3
 WORKDIR /opt/
 COPY ./wrapper ./wrapper
 COPY ./service ./service
