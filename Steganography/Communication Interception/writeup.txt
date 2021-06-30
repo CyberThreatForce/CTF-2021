@@ -7,6 +7,12 @@ L'avenir de tous repose sur vos epaules.
 
 Q.G.
 
+Hello CTF-Agent,
+
+We found a supsicious image in the phone of an APT-403's member.
+We are counting on you to decrypt this message and prevent an incoming attack.
+
+Q.G
 
 1ere etape:
 

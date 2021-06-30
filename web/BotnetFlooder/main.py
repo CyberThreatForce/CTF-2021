@@ -4,6 +4,7 @@ import os
 global secret
 
 #1.1.1.1');global secret;secret=code;int('1
+#"CYBERTF{D0nT_D3fuSe_Th3_B0tN3t}"
 
 secret = "_"
 app = Flask(__name__)
@@ -32,7 +33,6 @@ def ddos(ip):
 def index():
     renvoi = ""
     global secret
-    code = "CYBERTF{D0nT_D3fuSe_Th3_B0tN3t}"
     global retour
     retour = "" 
     if request.method == 'GET':

@@ -41,7 +41,7 @@ class Key:
         second_part = random.choice(range(100000,999999))
         self.key = str(first_part)+"@"+str(second_part)
         return self.key
-        
+
     def generate_password(self,key):
         global key_holder
         digit = str(random.choice(range(100,99999)))
@@ -60,7 +60,7 @@ class Key:
         password = password[::-1]
 
         return password
-    
+
     def check_password(self,password,key):
         key1,key2 = key.split("@")[0],key.split("@")[1]
         password = xor(password,key1)
@@ -112,7 +112,7 @@ def index():
                 return render_template('index.html',error="Password not in the db")
         else:
             return render_template('index.html',error="Invalid Password")
-        
+
 
 @app.route('/algo',methods=['GET'])
 def algo():
