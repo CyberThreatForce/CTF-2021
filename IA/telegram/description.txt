@@ -1,0 +1,10 @@
+Dear Agent,
+
+We have been monitoring an internal website for some time now for suspicious activity.
+To be precise, a source in the karmenovian military infrastructure made a mirror website of their internal webserver.
+Some of the source code has been translated by our source in french.
+We recently had confirmation of our suspicion and need you to move forward and investigate.
+
+Best of luck and may the hack be with you.
+
+CyberThreatForce Team

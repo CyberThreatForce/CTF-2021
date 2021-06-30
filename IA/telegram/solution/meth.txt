@@ -1,0 +1,9 @@
+Stegano:
+Dimitri_Kiriznov_403
+ffmpeg -i chall2_flagged_bis.png -r 10 $filename%03d.bmp
+Reconstruct apng with reconstruct.py
+
+Crypto:
+openssl enc -nosalt -aes-256-cbc -k APT403_in_force_with_karmenovia_ -P
+openssl enc -aes-256-cbc -K E5F040D82361F609C70A0E6D78294A13BE222EE389C1FEE4E41CAC28C4696EB5 -iv 04ABC222D213CFA8AE548C866FA366D1 -in ./coucou.txt -out coucou.cipher
+openssl enc -aes-256-cbc -d -K E5F040D82361F609C70A0E6D78294A13BE222EE389C1FEE4E41CAC28C4696EB5 -iv 04ABC222D213CFA8AE548C866FA366D1 -in ./coucou.cipher -out clear.cipher

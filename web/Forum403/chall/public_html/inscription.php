@@ -27,18 +27,18 @@ else
 				$password = $result[1];
 				if( $_POST['username']==$username && $_POST['password']==$password )
 				{
-					echo "<pre>Well done!!</pre>";
+					echo "<html><body><pre>Well done!!</pre></body></html>";
 					exit;
 				}
 				else
 				{
-					header("Location: /");
+					echo "<html><body><pre><img src=\"trollface.png\"></pre></body></html>";
 					exit;
 				}
 			}
 			catch(Exception $e)
 			{
-				echo "<br>Wrong<br>";
+				echo "<html><body><pre><img src=\"trollface.png\"></pre></body></html>";
 				exit;
 			}
 		}
@@ -50,7 +50,7 @@ else
 	}
 	else 
 	{
-		header("Location /");
+		echo "<html><body><pre><img src=\"trollface.png\"></pre></body></html>";
 		exit;
 	}
 }
