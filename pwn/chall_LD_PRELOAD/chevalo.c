@@ -3,6 +3,6 @@
 #include <string.h>
 
 int main(int argc, char **argv){
-	puts("chevalo n'est pas comptent");
+	puts("Ивазов недоволен");
 	return 0;
 }

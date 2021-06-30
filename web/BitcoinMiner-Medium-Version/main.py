@@ -42,7 +42,7 @@ class Key:
         second_part = random.choice(range(100000,999999))
         self.key = str(first_part)+"@"+str(second_part)
         return self.key
-        
+
     def generate_password(self,key):
         global key_holder
         digit = str(random.choice(range(100,99999)))
@@ -61,7 +61,7 @@ class Key:
         password = password[::-1]
 
         return password
-    
+
     def check_password(self,password,key):
         key1,key2 = key.split("@")[0],key.split("@")[1]
         password = xor(password,key1)
@@ -83,7 +83,7 @@ global password
 password = Key()
 
 app = Flask(__name__)
-
+app.debug = False
 
 @app.route('/',methods=['GET',"POST"])
 def index():
@@ -109,12 +109,12 @@ def index():
 
         if password.check_password(entry_password,cookie)==site_password:
             if entry_password in key_holder:
-                return render_template('index.html',success="CYBERTF{3fFici3nT_M1n3r1$#}")
+                return render_template('index.html',success="CYBERTF{Th3_Min3r_Is_Ins3cURe}")
             else:
                 return render_template('index.html',error="Password not in the db")
         else:
             return render_template('index.html',error="Invalid Password")
-        
+
 
 @app.route('/algo',methods=['GET'])
 def algo():

