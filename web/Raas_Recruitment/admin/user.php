@@ -1,5 +1,8 @@
 <?php require_once("config/db.php"); 
 session_start();
+if($_SESSION['user_login_status'] != 1){
+    header("Location: index.php");
+}
 $iduser = $_GET["id"];
 
 $conn = new mysqli('localhost', 'root', '', 'chall2');

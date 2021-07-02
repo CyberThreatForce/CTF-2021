@@ -1,6 +1,12 @@
 <?php
 require 'connection.php'; // called by ajax
 
+session_start();
+
+if($_SESSION['user_login_status'] != 1){
+    header("Location: index.php");
+}
+
 $username = mysqli_real_escape_string($dbcon, htmlentities($_POST['username']));
 $email = mysqli_real_escape_string($dbcon, htmlentities($_POST['email']));
 $radio = mysqli_real_escape_string($dbcon, $_POST['radio']);

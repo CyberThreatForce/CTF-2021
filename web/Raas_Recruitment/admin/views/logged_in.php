@@ -247,7 +247,8 @@
                         <form enctype="multipart/form-data" name="user_details" class="user_details" action="form-submit.php" method="post"><!--- --->
                            <div class="card no-b shadow no-r">
                                <div class="card-body">
-                                   <h5 class="card-title">About User</h5>
+                                   <h5 class="card-title">Dev Account</h5>
+                                   <h7 class="card-title">Create Account only for accepted people, they will have access to /bingvxyyaknprxtgwexgldwdcrcqrfacDEV</h7>
                                    <div class="form-row">
                                        <div class="col-8">
                                             <div class="form-group m-0">

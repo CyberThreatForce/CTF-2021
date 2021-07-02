@@ -7,7 +7,6 @@ $(function() {
     formdata.append( 'username', $.trim($('.username').val()) );
     formdata.append( 'email', $.trim($('.email').val()) );
     formdata.append( 'radio', $.trim($('.radio').val()) );
-    formdata.append( 'file', $('.file').prop('files') );
 
     $.ajax({
       type: 'POST',

@@ -69,7 +69,7 @@ if (isset($login)) {
     </div>
   </div>
   <div class="container-fluid py-3">
-    <p class="text-center text-2 text-muted mb-0">Copyright © 2020 <a href="#">Oxyy</a>. All Rights Reserved.</p>
+    <p class="text-center text-2 text-muted mb-0">Copyright © 2020 <a href="#">apt403</a>. All Rights Reserved.</p>
   </div>
 </div>
 
