@@ -49,18 +49,19 @@ def routine_client(clientConnected):
                 clientConnected.send("_______________________________________\n".encode());
                 clientConnected.send("| DbpRha  | PC012    | 192.168.15.124  |\n ".encode());
                 clientConnected.send("_______________________________________\n".encode());
-
-            elif dataFromClient2 == "2":
+                
+            elif dataFromClient2.decode() == "2":
                 clientConnected.send("Dump des pass/hash\n".encode());
                 clientConnected.send("____________________________________________________________\n".encode());
                 clientConnected.send("| Pass           | Username | Site                          |\n".encode());
                 clientConnected.send("____________________________________________________________\n".encode());
-                clientConnected.send("| .W$vjDEmV7YR/  | s3rgue1   | dontexist.onion              |\n ".encode());
+                clientConnected.send("| .W$vjDEmV7YR/  | s3rgue1   | 3eRAqbN921ULIRn8.onion       |\n ".encode());
                 clientConnected.send("____________________________________________________________\n".encode());
-                clientConnected.send("| 4709F798A8CFBDC870420453276E0B8E  | Administrator   | .  |\n ".encode());
+                clientConnected.send("| CYBERTF{0wn_th3_t3ams3rv3r} | Administrator   | .         |\n ".encode());
                 clientConnected.send("___________________________________________________________\n".encode());
-                clientConnected.send("| kuBtV9T}a]YP} | s3llcr3d1tc4rd   | dontexist.onion       |\n ".encode());
+                clientConnected.send("| kuBtV9T}a  | serguei@secret.com | orCcZ6gk4dgPHZOx.onion |\n ".encode());
                 clientConnected.send("___________________________________________________________\n".encode());
+
 
 
             elif dataFromClient2 == "3":
