@@ -18,7 +18,7 @@ else
 		if($_POST['captcha'] == $_SESSION['captcha']['code'])
 		{
 			$bdd = new PDO('mysql:host=localhost;dbname=ch4ll3ng3;charset=utf8', 'root', 'lnmyFqyPo3ZNw13PApZq');
-			$sql = "select us3rn4me,p455w0rd from u53r where us3rn4me='" . $_POST['username'] . "' and p455w0rd= '".$_POST['password']. "';";
+			$sql = "select username,password from u53r where username='" . $_POST['username'] . "' and password= '".$_POST['password']. "';";
 			try
 			{
 				$response = $bdd->query($sql);
