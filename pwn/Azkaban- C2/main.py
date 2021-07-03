@@ -4,7 +4,7 @@ from threading import Thread
 
 serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM);
 
-serverSocket.bind(('0.0.0.0', 8081));
+serverSocket.bind(('0.0.0.0', 8080));
 serverSocket.listen();
 
 def routine_client(clientConnected):
