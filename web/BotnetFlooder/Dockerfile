@@ -6,9 +6,6 @@ RUN apt -yq upgrade
 
 RUN mkdir /home/botnetflooder
 COPY ./ /home/botnetflooder
-COPY ./flag.txt /home/ctf/
-RUN chown root:root /home/ctf/flag.txt
-RUN chmod 444 /home/ctf/flag.txt
 WORKDIR /home/botnetflooder/
 
 RUN apt-get -yq install python3
