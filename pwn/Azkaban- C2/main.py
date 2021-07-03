@@ -4,7 +4,7 @@ from threading import Thread
 
 serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM);
 
-serverSocket.bind(('0.0.0.0', 8080));
+serverSocket.bind(('0.0.0.0', 8081));
 serverSocket.listen();
 
 def routine_client(clientConnected):
@@ -42,6 +42,8 @@ def routine_client(clientConnected):
             #(clientConnected, clientAddress) = serverSocket.accept();
             dataFromClient2 = clientConnected.recv(1024).decode().strip()
 
+	    
+	    
             if dataFromClient2 == "1":
                 clientConnected.send("Liste des implants connectés :\n ".encode());
                 clientConnected.send("_______________________________________\n".encode());
@@ -50,7 +52,9 @@ def routine_client(clientConnected):
                 clientConnected.send("| DbpRha  | PC012    | 192.168.15.124  |\n ".encode());
                 clientConnected.send("_______________________________________\n".encode());
                 
-            elif dataFromClient2.decode() == "2":
+                
+            
+            elif dataFromClient2 == "2":
                 clientConnected.send("Dump des pass/hash\n".encode());
                 clientConnected.send("____________________________________________________________\n".encode());
                 clientConnected.send("| Pass           | Username | Site                          |\n".encode());
