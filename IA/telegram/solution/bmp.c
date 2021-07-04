@@ -237,7 +237,7 @@ int create_stego(Image* I, char* bmpfilename, char *ppayload, int *keyword)
                         for(i = 0; i < strlen(ppayload); i++)
                         {
 				cover[i] = bmpfileRGBone[perm[i]];
-				if(ppayload[i] == 1)
+				if(ppayload[i] == '1')
 				{
 					bmpfileRGBone[perm[i]] = (bmpfileRGBone[perm[i]] >> 1) <<1 | 1;
 				}
